@@ -67,11 +67,15 @@ namespace BinaryTreeIntroduction.Lib
         internal void Insert(int v)
         {
             if (v < _value)
+            {
                 if (_left == null) _left = new BinaryTreeNode(v);
                 else _left.Insert(v);
+            }
             else
+            {
                 if (_right == null) _right = new BinaryTreeNode(v);
                 else _right.Insert(v);
+            }
         }
 
         public int Sum()
@@ -106,3 +110,4 @@ namespace BinaryTreeIntroduction.Lib
         }
     }
 }
+
